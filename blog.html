@@ -8,26 +8,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/513/63/png-transparent-3d-wearing-sunglasses-penguins-3d-animals-wearing-sunglasses-penguin.png" type="image/png">
-        
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="stylesheet" href="style/menu.css">
+        <link rel="stylesheet" href="style/tables.css">
+        <link rel="stylesheet" href="style/text.css">
+        <link rel="stylesheet" href="style/images.css">
+        <link rel="stylesheet" href="style/headers.css">
+        <script src="script/smoothly.js"></script>
+
     </head>
-    <body bgcolor="edf579">
-        <font face="Lobster, Arial" size="6">
-            <table width="100%" cellspacing="0" cellpadding="4" border="0">
-                <tr align="center">
-                <td width="250"><figure><img src="images/main-peng1.png" width="100%" alt="Лого"></figure></td>
-                <td><a href="index.html">Главная страница</a> </td>
-                <td><a href="history.html">История</a> </td>
-                <td><a href="examples.html">Примеры работ</a></td>
-                <td><a href="popul.html">Популяризаторы</a> </td>
-                <td><a href="about.html">Характеристические особенности</a> </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="right"><a href="meta.html">Метаирония</a> </td>
-                    <td colspan="3" align="right"><a href="blog.html">Блог</a> </td>
-                </tr>
-                
-            </table>
-                <table border="1">
+    <body>
+            <div class="header">
+                <img src="images/main-peng1.png" width="10%" alt="Лого">
+                <div class="navigation"> 
+                    <a href="index.html">Главная страница</a>
+                    <a href="history.html">История</a>
+                    <a href="examples.html">Примеры работ</a>
+                    <a href="popul.html">Популяризаторы</a>
+                    <a href="about.html">Характеристические особенности</a>
+                    <a href="meta.html">Метаирония</a>
+                    <a href="blog.html">Блог</a>
+                </div>
+            </div>
+                <table id="blog">
                     <tr>
                         <td><h3>User: Alex. Крутой сайт!</h3>
                             <p>Очень крутой сайт, мне очень понравился, автор, продолжай в том же духе!!!!</p></td>
@@ -37,21 +40,34 @@
                         <p>Полностью согласен с прошлым комментатором, сайт - огонь! 😎</p></td>
                     </tr>
                 </table>
-                
-            <center>
-                <form method="post">
+                <noscript>Ваш браузер не поддерживает скрипты 😢</noscript>
+                <form action="#" onsubmit='validate()'>
                     <br>
-                    <input size="32" name="username" placeholder="Никнейм">
+                    <p>Никнейм</p>
+                    <input id='nick' size="32" name="username">
                     <br>
-                    <input size="32" name="theme" placeholder="Тема">
+                    <p>Email(nure.ua)</p>
+                    <input id="mail" size="32" name="email" value="sobaka@mail.ua" required>
+                    <button size="32" type="button" value="Проверить" onclick="eemail()">Проверить</button>
+                    <div id='mail_warn' style='display:none'></div>
                     <br>
-                    <textarea rows="5" cols="32" size="30" type="text" name="thoughts" placeholder="Введите Ваши мысли, впечатления насчет постиронии, может быть некоторые хорошие примеры, которые Вы видели"></textarea>
+                    <p>Номер телефона</p>
+                    <input id="phone" size="32" name='телефон' value="380661234568" required>
+                    <button size = "32" type="button" value="Проверить" onclick="number()">Проверить</button>
+                    <div id='phone_warn' style="display:none"></div>
+                    
                     <br>
-                    <input type="submit" value="Отправить">
+                    <p>Тема</p>
+                    <input id='topic' size="32" name="theme">
+                    <br>
+                    <textarea id='text_message' rows="5" cols="32" size="30" type="text" name="thoughts" required>Введите Ваши мысли, впечатления насчет постиронии, может быть некоторые хорошие примеры, которые Вы видели</textarea>
+                    <br>
+                    <input id='submit' type="button" value="Отправить" onclick='addMessage()'>
                 </form>
-            </center>
-        </font>
-
+                <script src="script/table.js"></script>
+                <script src="script/validate.js"></script>
+                <script src="script/send_message.js"></script>
+                <script src='script/validate_form.js'></script>
     </body>
     
 </html>

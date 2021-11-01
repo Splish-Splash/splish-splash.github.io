@@ -8,28 +8,32 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/513/63/png-transparent-3d-wearing-sunglasses-penguins-3d-animals-wearing-sunglasses-penguin.png" type="image/png">
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="stylesheet" href="style/menu.css">
+        <link rel="stylesheet" href="style/tables.css">
+        <link rel="stylesheet" href="style/text.css">
+        <link rel="stylesheet" href="style/images.css">
+        <link rel="stylesheet" href="style/headers.css">
+        <script src="script/first.js"></script>
+        <script src="script/smoothly.js"></script>
 
-        
     </head>
-    <body bgcolor="edf579">
-        <font face="Lobster, Arial" size="6">
-            <table width="100%" cellspacing="0" cellpadding="4" border="0">
-                <tr align="center">
-                <td width="250"><figure><img src="images/main-peng1.png" width="100%"></figure></td>
-                <td><a href="index.html">Главная страница</a> </td>
-                <td><a href="history.html">История</a> </td>
-                <td><a href="examples.html">Примеры работ</a></td>
-                <td><a href="popul.html">Популяризаторы</a> </td>
-                <td><a href="about.html">Характеристические особенности</a> </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="right"><a href="meta.html">Метаирония</a> </td>
-                    <td colspan="3" align="right"><a href="blog.html">Блог</a> </td>
-                </tr>
-                
-            </table>
+    <body>
+            <div class="header">
+                <img src="images/main-peng1.png" width="10%" alt="Лого">
+                <div class="navigation"> 
+                    <a href="index.html">Главная страница</a>
+                    <a href="history.html">История</a>
+                    <a href="examples.html">Примеры работ</a>
+                    <a href="popul.html">Популяризаторы</a>
+                    <a href="about.html">Характеристические особенности</a>
+                    <a href="meta.html">Метаирония</a>
+                    <a href="blog.html">Блог</a>
+                </div>
+            </div>
+            <div>
 
-            <ol>
+            <ol class="hidden">
                 <li>
                     <h3>Начало</h3>
                     <p>Первые зародыши постиронии начались в начале 2015 года, тогда были созданы паблики, первым из которых был <a href="https://vk.com/rju00" target="_blank">ржу</a>. Его главной особенностью стало окончательное размытие грани между серьёзностью и иронией в подаче контента, что, собственно, и является постиронией.</p>
@@ -47,8 +51,8 @@
                     </p>
                 </li>
                 <li>
-                    <h3>Что случилось?</h3>
-                    <p>Ниже находится график запросов в гугл термина постиронии с начала 2017 года по конец 2018: </p>
+                    <h3 class="clickable" onclick="firstFunc('block_id')">Что случилось?</h3>
+                    <div id="block_id">Ниже находится график запросов в гугл термина постиронии с начала 2017 года по конец 2018: </div>
                     <img width="60%"src="https://memepedia.ru/wp-content/uploads/2018/09/postironiya-gugl.png">
                     <p>Собственно, отсюда и растут ноги у того, что сейчас считают “постиронией”. На деле же, лобстер-мемы и прочий щитпост-контент — это не постирония, так как комический эффект в таких мемах достигается лишь повышением градуса абсурдности, а не иронизированием над первичной иронией.</p>
                 </li>
@@ -57,7 +61,6 @@
                     <p>Сейчас никто не видит разницу между классической постиронией и обычным абсурдом, да и видить эту разницу не нужно, юмор существует для того чтобы дарить эмоции, а не спорить что является каноном.</p>
                 </li></ol>
            
-        </font>
 
     </body>
     

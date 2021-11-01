@@ -8,34 +8,37 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/513/63/png-transparent-3d-wearing-sunglasses-penguins-3d-animals-wearing-sunglasses-penguin.png" type="image/png">
-       
-        
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="stylesheet" href="style/menu.css">
+        <link rel="stylesheet" href="style/tables.css">
+        <link rel="stylesheet" href="style/text.css">
+        <link rel="stylesheet" href="style/images.css">
+        <link rel="stylesheet" href="style/headers.css">
+        <script src="script/first.js"></script>
+        <script src="script/smoothly.js"></script>
+
     </head>
-    <body bgcolor="edf579">
-        <font face="Lobster, Arial" size="6">
-            <table width="100%" cellspacing="0" cellpadding="4" border="0">
-                <tr align="center">
-                <td width="250"><figure><img src="images/main-peng1.png" width="100%"></figure></td>
-                <td><a href="index.html">Главная страница</a> </td>
-                <td><a href="history.html">История</a> </td>
-                <td><a href="examples.html">Примеры работ</a></td>
-                <td><a href="popul.html">Популяризаторы</a> </td>
-                <td><a href="about.html">Характеристические особенности</a> </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="right"><a href="meta.html">Метаирония</a> </td>
-                    <td colspan="3" align="right"><a href="blog.html">Блог</a> </td>
-                </tr>
-                
-            </table>
-            <center>
-            <h1>Постирония</h1>
-            <p>Постирония это новая ветвь юмора, которая очень сильно смешит тех, кто ее понимает 
-                и обескураживает тех, кто с ней впервые сталкивается
-            </p>
-            <img width="30%" src="https://sun9-29.userapi.com/impf/c849036/v849036192/de47e/42rsSrPPebM.jpg?size=750x746&quality=96&sign=aa594f3a59e2d399d3b4506350c2bfb6&type=album">
+    <body>
+            <div class="header">
+                <img src="images/main-peng1.png" width="10%" alt="Лого">
+                <div class="navigation"> 
+                    <a href="index.html">Главная страница</a>
+                    <a href="history.html">История</a>
+                    <a href="examples.html">Примеры работ</a>
+                    <a href="popul.html">Популяризаторы</a>
+                    <a href="about.html">Характеристические особенности</a>
+                    <a href="meta.html">Метаирония</a>
+                    <a href="blog.html">Блог</a>
+                    
+                </div>
+            </div>
+            <div>
+            <h1 class="clickable" onclick="firstFunc('block_id')">Постирония</h1>
+            <div id="block_id" style="display:none;">Постирония это новая ветвь юмора, которая очень сильно смешит тех, кто ее понимает 
+                и обескураживает тех, кто с ней впервые сталкивается</div>
+            <img id="right" width="25%" src="https://sun9-29.userapi.com/impf/c849036/v849036192/de47e/42rsSrPPebM.jpg?size=750x746&quality=96&sign=aa594f3a59e2d399d3b4506350c2bfb6&type=album">
             <br>
-            <img width="30%" src="https://sun9-31.userapi.com/impg/sEwMFrnU_PqbhQB-zuawpBq4F9AtFCczj803iQ/nxOPzUxhb_U.jpg?size=935x725&quality=96&sign=37546c1bf25f1156b99a4e953ac6955f&type=album">
+            <img id="left"width="30%" src="https://sun9-31.userapi.com/impg/sEwMFrnU_PqbhQB-zuawpBq4F9AtFCczj803iQ/nxOPzUxhb_U.jpg?size=935x725&quality=96&sign=37546c1bf25f1156b99a4e953ac6955f&type=album">
             <p>Если у вас возник вопрос как это воспринимать, то без паники, сейчас вы все узнаете</p>
             <h2>Что же это такое??????????????</h2>
             <p>Постирония это сатирический приём, который срабатывает в зависимости от восприятия читателя. Тех, кто использует постиронию зачастую
@@ -56,10 +59,10 @@
                 мыслями здесь и не нужен, так как здесь постирония проявляется в том, что кто-то эту фотографию считает крутой и брутальной. 
                 То есть здесь мы смеемся не с того, что автор выдал шуточные суждения за серьезные, а в том, что автор даже этого не понял =)
             </p>
-            <p><font color="red">Этот сайт я делал полностью серьёзно</font></p>
-            <p><font size="1" color="grey">Или это постирония?</font></p>
-        </center>
-        </font>
+            <p id="sarcasm">Этот сайт я делал полностью серьёзно</p>
+            <p id="hidden">Или это постирония?</p>
+        </div>
+        
     </body>
     
 </html>
