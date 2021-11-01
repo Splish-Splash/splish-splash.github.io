@@ -1,0 +1,12 @@
+.header{   
+    display: flex;
+    align-items: center;  
+}
+.navigation {
+padding: 10px 20px;
+font-size: 30px;
+margin: 20px;
+}
+div a {
+    margin-right: 20px;
+}

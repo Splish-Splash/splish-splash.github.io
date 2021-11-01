@@ -1,0 +1,10 @@
+p#sarcasm{
+    color: red;
+}
+p#hidden{
+    color: grey;
+    font-size: 10px;
+}
+body{
+    font-size: 25px;
+}

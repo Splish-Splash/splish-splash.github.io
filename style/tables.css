@@ -1,0 +1,14 @@
+/* td:nth-child(even){
+    background-color: #edf579;
+}
+tr:nth-child(even){
+    background-color: #edf579;
+} */
+td:hover{
+    color: orange;
+}
+table#blog{
+    align-items: left;
+    border: 1px solid black;
+
+}

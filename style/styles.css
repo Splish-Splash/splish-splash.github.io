@@ -1,0 +1,68 @@
+* {
+    font-family: Lobster, Arial, Helvetica;
+    background-color: pink;
+}
+body{
+    opacity: 0;
+    transition: 5s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+.clickable:hover{
+    cursor:pointer;
+    color:orange;
+}
+
+@media (handheld){
+    div#gallery {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+div{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+@media print{
+    body{font-family: Times, "Times New Roman", serif;}
+}
+
+@media only all{
+    #right{
+        float:right;
+    }
+    #left{
+        float:left;
+    }
+}
+
+a:hover, td:hover{
+    color: orange;
+}
+a:hover{
+    cursor: wait;
+}
+
+ol.hidden{
+    list-style-type: none;
+}
+ul li{
+    text-align: left;
+}
+
+div#block_id{
+    display:none;
+}
+
+@keyframes animate {
+    from{top:-320px; opacity:0}
+    to{top:0px; opacity:1}
+
+}
+span:hover{
+    cursor: pointer;
+}

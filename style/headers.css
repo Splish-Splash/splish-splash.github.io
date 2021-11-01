@@ -1,0 +1,3 @@
+h1:before, h1:after, h2:before, h2:after{
+    content: "~";
+}
