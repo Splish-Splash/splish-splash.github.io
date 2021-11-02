@@ -21,7 +21,7 @@
     <body>
             <div class="header">
                 <img src="images/main-peng1.png" width="10%" alt="Лого">
-                <div class="navigation"> 
+                <div class="navigation"  id='navi'> 
                     <a href="index.html">Главная страница</a>
                     <a href="history.html">История</a>
                     <a href="examples.html">Примеры работ</a>
@@ -35,10 +35,12 @@
 
             <ol class="hidden">
                 <li>
+                    <a name='start'></a>
                     <h3>Начало</h3>
                     <p>Первые зародыши постиронии начались в начале 2015 года, тогда были созданы паблики, первым из которых был <a href="https://vk.com/rju00" target="_blank">ржу</a>. Его главной особенностью стало окончательное размытие грани между серьёзностью и иронией в подаче контента, что, собственно, и является постиронией.</p>
                 </li>
                 <li>
+                    <a name='lobster'></a>
                     <h3>Шрифт Лобстер и новая постирония </h3>
                     <p>С начала 2017 года постирония начала набирать обороты, при этом изменяя концепцию, теперь постиронией считалась любая картинка, в которой 
                         что-то написано шрифтом Lobster(лобстер-мемы)(как на этом сайте), нарочито сделаны ошибки в правописании(вместо мягкого знака используется б, сильные ошибки в орфографии). Так же в мемах начали использовать солов'їну мову. 
@@ -51,16 +53,40 @@
                     </p>
                 </li>
                 <li>
+                    <a name='happened'></a>
                     <h3 class="clickable" onclick="firstFunc('block_id')">Что случилось?</h3>
                     <div id="block_id">Ниже находится график запросов в гугл термина постиронии с начала 2017 года по конец 2018: </div>
                     <img width="60%"src="https://memepedia.ru/wp-content/uploads/2018/09/postironiya-gugl.png">
                     <p>Собственно, отсюда и растут ноги у того, что сейчас считают “постиронией”. На деле же, лобстер-мемы и прочий щитпост-контент — это не постирония, так как комический эффект в таких мемах достигается лишь повышением градуса абсурдности, а не иронизированием над первичной иронией.</p>
                 </li>
                 <li>
+                    <a name='result'></a>
                     <h3>Что мы имеем?</h3>
                     <p>Сейчас никто не видит разницу между классической постиронией и обычным абсурдом, да и видить эту разницу не нужно, юмор существует для того чтобы дарить эмоции, а не спорить что является каноном.</p>
                 </li></ol>
-           
+                <div class='menu' id="index">
+                    <dt><a href="index.html#Post">Постирония</a></dt>
+                    <dt><a href="index.html#what">Что это?</a></dt>
+                    <dt><a href="index.html#where">Смеяться?</a></dt>
+                </div>
+                <div class='menu' id='hist'>
+                    <dt><a href="history.html#start">Начало</a></dt>
+                    <dt><a href="history.html#lobster">Лобстер</a></dt>
+                    <dt><a href="history.html#happened">Что случилось?</a></dt>
+                    <dt><a href="history.html#result">Итог</a></dt>
+                </div>
+                <div class='menu' id='ex'>
+                    <dt><a href='examples.html#1'>1 пример</a></dt>
+                    <dt><a href='examples.html#2'>2 пример</a></dt>
+                    <dt><a href='examples.html#3'>3 пример</a></dt>
+                    <dt><a href='examples.html#4'>4 пример</a></dt>
+                    <dt><a href='examples.html#5'>5 пример</a></dt>
+                    <dt><a href='examples.html#6'>6 пример</a></dt>
+                    <dt><a href='examples.html#7'>7 пример</a></dt>
+                    <dt><a href='examples.html#8'>8 пример</a></dt>
+                    <dt><a href='examples.html#9'>9 пример</a></dt>
+                </div>
+                <script src="script/adaptive_menu.js"></script>
 
     </body>
     

@@ -20,7 +20,7 @@
     <body>
             <div class="header">
                 <img src="images/main-peng1.png" width="10%" alt="Лого">
-                <div class="navigation"> 
+                <div class="navigation"  id='navi'> 
                     <a href="index.html">Главная страница</a>
                     <a href="history.html">История</a>
                     <a href="examples.html">Примеры работ</a>
@@ -64,6 +64,30 @@
                     <br>
                     <input id='submit' type="button" value="Отправить" onclick='addMessage()'>
                 </form>
+                <div class='menu' id="index">
+                    <dt><a href="index.html#Post">Постирония</a></dt>
+                    <dt><a href="index.html#what">Что это?</a></dt>
+                    <dt><a href="index.html#where">Смеяться?</a></dt>
+                </div>
+                <div class='menu' id='hist'>
+                    <dt><a href="history.html#start">Начало</a></dt>
+                    <dt><a href="history.html#lobster">Лобстер</a></dt>
+                    <dt><a href="history.html#happened">Что случилось?</a></dt>
+                    <dt><a href="history.html#result">Итог</a></dt>
+                </div>
+                <div class='menu' id='ex'>
+                    <dt><a href='examples.html#1'>1 пример</a></dt>
+                    <dt><a href='examples.html#2'>2 пример</a></dt>
+                    <dt><a href='examples.html#3'>3 пример</a></dt>
+                    <dt><a href='examples.html#4'>4 пример</a></dt>
+                    <dt><a href='examples.html#5'>5 пример</a></dt>
+                    <dt><a href='examples.html#6'>6 пример</a></dt>
+                    <dt><a href='examples.html#7'>7 пример</a></dt>
+                    <dt><a href='examples.html#8'>8 пример</a></dt>
+                    <dt><a href='examples.html#9'>9 пример</a></dt>
+                </div>
+                <script src="script/adaptive_menu.js"></script>
+
                 <script src="script/table.js"></script>
                 <script src="script/validate.js"></script>
                 <script src="script/send_message.js"></script>

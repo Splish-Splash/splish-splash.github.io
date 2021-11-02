@@ -20,8 +20,9 @@
     </head>
     <body>
             <div class="header">
+                
                 <img src="images/main-peng1.png" width="10%" alt="Лого">
-                <div class="navigation"> 
+                <div class="navigation" id='navi'> 
                     <a href="index.html">Главная страница</a>
                     <a href="history.html">История</a>
                     <a href="examples.html">Примеры работ</a>
@@ -33,6 +34,7 @@
                 </div>
             </div>
             <div>
+            <a name='Post'></a>
             <h1 class="clickable" onclick="firstFunc('block_id')">Постирония</h1>
             <div id="block_id" style="display:none;">Постирония это новая ветвь юмора, которая очень сильно смешит тех, кто ее понимает 
                 и обескураживает тех, кто с ней впервые сталкивается</div>
@@ -40,12 +42,14 @@
             <br>
             <img id="left"width="30%" src="https://sun9-31.userapi.com/impg/sEwMFrnU_PqbhQB-zuawpBq4F9AtFCczj803iQ/nxOPzUxhb_U.jpg?size=935x725&quality=96&sign=37546c1bf25f1156b99a4e953ac6955f&type=album">
             <p>Если у вас возник вопрос как это воспринимать, то без паники, сейчас вы все узнаете</p>
+            <a name='what'></a>
             <h2>Что же это такое??????????????</h2>
             <p>Постирония это сатирический приём, который срабатывает в зависимости от восприятия читателя. Тех, кто использует постиронию зачастую
                 не понимают, шутят они или говорят полностью серьёзно. Если вернутся к картинке с котиками, правда ли автор так злится из-за того, что не может
                 поцеловать всех котиков? Вряд-ли, поэтому можно сказать что смайлики, которые были добавлены, отображают несерьёзность высказывания. Смешно ли это?
                 Пока что нет) 
             </p>
+            <a name='where'></a>
             <h2>Где смеяться?</h2>
             <p>Постирония не для всех, и те, кто ей орудуют это знают. Первый, кто посмеется с постироничной шутки, будет сам шутящий. 
                 Почему? Потому что лишь сам шутящий понимает, что он сказал это высказывание в шутку, а не в серьёз, пока слушатели 
@@ -61,8 +65,32 @@
             </p>
             <p id="sarcasm">Этот сайт я делал полностью серьёзно</p>
             <p id="hidden">Или это постирония?</p>
+
+            <div class='menu' id="index">
+                <dt><a href="index.html#Post">Постирония</a></dt>
+                <dt><a href="index.html#what">Что это?</a></dt>
+                <dt><a href="index.html#where">Смеяться?</a></dt>
+            </div>
+            <div class='menu' id='hist'>
+                <dt><a href="history.html#start">Начало</a></dt>
+                <dt><a href="history.html#lobster">Лобстер</a></dt>
+                <dt><a href="history.html#happened">Что случилось?</a></dt>
+                <dt><a href="history.html#result">Итог</a></dt>
+            </div>
+            <div class='menu' id='ex'>
+                <dt><a href='examples.html#1'>1 пример</a></dt>
+                <dt><a href='examples.html#2'>2 пример</a></dt>
+                <dt><a href='examples.html#3'>3 пример</a></dt>
+                <dt><a href='examples.html#4'>4 пример</a></dt>
+                <dt><a href='examples.html#5'>5 пример</a></dt>
+                <dt><a href='examples.html#6'>6 пример</a></dt>
+                <dt><a href='examples.html#7'>7 пример</a></dt>
+                <dt><a href='examples.html#8'>8 пример</a></dt>
+                <dt><a href='examples.html#9'>9 пример</a></dt>
+            </div>
         </div>
-        
+        <script src="script/timer.js"></script>
+        <script src="script/adaptive_menu.js"></script>
     </body>
     
 </html>
