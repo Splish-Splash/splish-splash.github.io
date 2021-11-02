@@ -1,12 +1,20 @@
 .header{   
     display: flex;
     align-items: center;  
+    
 }
 .navigation {
-padding: 10px 20px;
+padding: 0px 0px;
 font-size: 30px;
-margin: 20px;
+margin: 0px;
+position:fixed;
+    top:0px;
+    left:180px;
+    z-index: 2;
 }
 div a {
     margin-right: 20px;
+}
+.menu{
+    text-align: left;
 }
